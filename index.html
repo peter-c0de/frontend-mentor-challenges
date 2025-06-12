@@ -13,17 +13,22 @@
       <h1 class="mt-4">Frontend Mentor: Challenges</h1>
 
       <h2 class="mt-4">Repository</h2>
-      <ul class="list-group">
-        <li class="list-group-item"><a href="https://github.com/peter-c0de/frontend-mentor-challenges">https://github.com/peter-c0de/frontend-mentor-challenges</a></li>
-      </ul>
+      <div class="input-group mb-3">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://github.com/peter-c0de/frontend-mentor-challenges" target="_blank">https://github.com/peter-c0de/frontend-mentor-challenges</a></li>
+        </ul>
+        <button type="button" class="btn btn-secondary" onclick="repo_link()">copy</button>
+      </div>
 
       <h2 class="mt-4">Page</h2>
-      <ul class="list-group">
-        <li class="list-group-item"><a href="https://peter-c0de.github.io/frontend-mentor-challenges">https://peter-c0de.github.io/frontend-mentor-challenges</a></li>
-      </ul>
+      <div class="input-group mb-3">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://peter-c0de.github.io/frontend-mentor-challenges" target="_blank">https://peter-c0de.github.io/frontend-mentor-challenges</a></li>
+        </ul>
+        <button type="button" class="btn btn-secondary" onclick="page_link()">copy</button>
+      </div>
 
       <h2 class="mt-4">Basic Challenges</h2>
-      
       <table class="table table-striped">
         <thead>
         <tr>
@@ -65,5 +70,13 @@
     <div style="margin-top: 350px"></div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function repo_link(){
+        navigator.clipboard.writeText("https://github.com/peter-c0de/frontend-mentor-challenges");
+      }
+      function page_link(){
+        navigator.clipboard.writeText("https://peter-c0de.github.io/frontend-mentor-challenges");
+      }
+    </script>
   </body>
 </html>
